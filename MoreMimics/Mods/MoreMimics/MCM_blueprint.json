@@ -1,0 +1,55 @@
+{
+    "SchemaVersion": 1,
+    "Tabs": [
+        {   "TabName": "General Settings",
+            "TabId": "General",
+            "Sections": [
+                {
+                    "SectionId": "More mimics",
+                    "SectionName": "More mimics",
+                    "Settings": [
+                        {
+                            "Id": "EncounterPercentage",
+                            "Name": "EncounterPercentage",
+                            "Type": "slider_int",
+                            "Default": 20,
+                            "Description": "The likelihood of a chest turning into a mimic",
+                            "Handles": {
+                                "DescriptionHandle": "ha62e2351g99c6g43b5gb830g7c3e8a9003dc",
+                                "NameHandle": "ha07c36f1gdacdg4e25gbb2bgf8ee440e09c1"
+                            },"Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "Seed",
+                            "Name": "Seed",
+                            "Type": "text",
+                            "Default": "chesty",
+                            "Description": "Used to determine which chest turns into a mimic. Consistent across all playthroughs. ",
+                            "Handles": {
+                                "DescriptionHandle": "hb702ada3g2103g4fcbga9d3g4dc29aa9afdc",
+                                "NameHandle": "h07b4a349gacabg413bg9d92gfee4fff3651b"
+                            }
+                        },
+                        {
+                            "Id": "HarderMimics",
+                            "Name": "HarderMimics",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Give Mimics the ability to steal your armor. Turning this off will restore default behaviour",
+                            "Handles": {
+                                "DescriptionHandle": "hb702ada3g2103g4fcbga0d3g4dc29aa9afdc",
+                                "NameHandle": "h07b4a349gacabg413bg9d92gfee5fff3651b"
+                            }
+                        }
+                    ],
+                    "Handles": {
+                        "NameHandle": "h6486a618ge723g479fga67dg84a92417b9ab"
+                    }
+                }
+            ]
+        }
+    ]
+}

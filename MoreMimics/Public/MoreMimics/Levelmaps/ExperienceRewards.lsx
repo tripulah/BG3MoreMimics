@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="307"/>
+    <region id="ExperienceRewards">
+        <node id="root">
+            <children>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="5"/>
+                    <attribute id="Level10" type="uint32" value="5"/>
+                    <attribute id="Level11" type="uint32" value="5"/>
+                    <attribute id="Level12" type="uint32" value="5"/>
+                    <attribute id="Level2" type="uint32" value="5"/>
+                    <attribute id="Level3" type="uint32" value="5"/>
+                    <attribute id="Level4" type="uint32" value="5"/>
+                    <attribute id="Level5" type="uint32" value="5"/>
+                    <attribute id="Level6" type="uint32" value="5"/>
+                    <attribute id="Level7" type="uint32" value="5"/>
+                    <attribute id="Level8" type="uint32" value="5"/>
+                    <attribute id="Level9" type="uint32" value="5"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="MoreMimicsEasy"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="a9bef685-14c8-4c95-82c1-3f96080e7cef"/>
+                </node>
+                <node id="ExperienceReward">
+                    <attribute id="Level1" type="uint32" value="50"/>
+                    <attribute id="Level10" type="uint32" value="50"/>
+                    <attribute id="Level11" type="uint32" value="50"/>
+                    <attribute id="Level12" type="uint32" value="50"/>
+                    <attribute id="Level2" type="uint32" value="50"/>
+                    <attribute id="Level3" type="uint32" value="50"/>
+                    <attribute id="Level4" type="uint32" value="50"/>
+                    <attribute id="Level5" type="uint32" value="50"/>
+                    <attribute id="Level6" type="uint32" value="50"/>
+                    <attribute id="Level7" type="uint32" value="50"/>
+                    <attribute id="Level8" type="uint32" value="50"/>
+                    <attribute id="Level9" type="uint32" value="50"/>
+                    <attribute id="LevelSource" type="uint8" value="1"/>
+                    <attribute id="Name" type="FixedString" value="MoreMimicsHard"/>
+                    <attribute id="RewardType" type="uint8" value="0"/>
+                    <attribute id="UUID" type="guid" value="ca4caade-9cc3-4397-a26c-7cedae2dae3b"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

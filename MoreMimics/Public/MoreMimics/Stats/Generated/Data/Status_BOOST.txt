@@ -1,0 +1,63 @@
+new entry "MIMIC_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+data "AuraRadius" "12"
+data "AuraStatuses" "TARGET:IF(not Character()):ApplyStatus(CONVERT_CHEST_TO_MIMIC)"
+data "TickFunctors" ""
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "CONVERT_CHEST_TO_MIMIC"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "AMBUSH_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+data "AuraRadius" "12"
+data "AuraStatuses" "TARGET:IF(Character() and Enemy()):ApplyStatus(AMBUSH_HELPER,100,1)"
+data "TickFunctors" ""
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "AMBUSH_HELPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "AMBUSH_IMMUNITY"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "ARMOR_STEAL_HELPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "ARMOR_STEAL"
+type "StatusData"
+data "StatusType" "BOOST"
+data "Icon" "Action_DisarmingAttack_Melee"
+data "FormatColor" "Orange"
+data "StatusPropertyFlags" "ForceOverhead;DisableCombatlog"
+// Armor Stolen!
+data "DisplayName" "hf8d59f50g7a31g418ag87aag82f3335d54e4"
+// An enemy has stolen your armor.
+data "Description" "hb84ca540g0946g4a62g9057g447d3a4a4992"
+
+new entry "TRANSFORM_HELPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusEffect" "f4ee8056-d215-4493-9509-899c642c371d"
+data "StackType" "Overwrite"
+
+new entry "CALL_NEIGHBOURS_HELPER"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "ABSORB_ITEM"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"

@@ -1,0 +1,6 @@
+.vscode
+Tools/
+InstallTools.bat
+*.lsf
+*.zip
+*.loca
