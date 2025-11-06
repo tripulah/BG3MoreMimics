@@ -33,7 +33,6 @@ MimicType = NORMAL
 Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(levelName, _)
     local party = Osi.DB_PartyMembers:Get(nil)
     for i = #party, 1, -1 do
-        TryRemovePassive((party[i][1]), "MIMIC_Conversion_Aura")
         TryRemoveStatus((party[i][1]), "MIMIC_AURA")
         TryRemoveStatus((party[i][1]), "AMBUSH_IMMUNITY")
     end
@@ -48,7 +47,6 @@ Ext.Osiris.RegisterListener("LevelGameplayStarted", 2, "after", function(levelNa
 end)
 
 Ext.Osiris.RegisterListener("CharacterJoinedParty", 1, "after", function(actor)
-    TryRemovePassive(actor, "MIMIC_Conversion_Aura")
     TryRemoveStatus(actor, "MIMIC_AURA")
 end)
 
@@ -66,7 +64,9 @@ Ext.Osiris.RegisterListener("AttackedBy", 7, "before", function(defender, attack
 end)
 
 Ext.Osiris.RegisterListener("TemplateOpening", 3, "before", function(itemTemplate, item2, character)
-    MarkForMimicConversion(item2, character)
+    if Osi.IsInInventory(item2) ~= 1 then
+        MarkForMimicConversion(item2, character)
+    end
 end)
 
 Ext.Osiris.RegisterListener("StatusRemoved", 4, "after", function(object, status, causee, storyActionID)
